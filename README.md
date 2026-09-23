@@ -4,6 +4,10 @@ A legal-ops desk for incoming NDAs. The model quotes the contract. A company pla
 
 This is a local demo. It is not legal advice.
 
+![A live review of the demo PDF: the model streams its extraction, Python checks every quote and applies the playbook rules, and the router returns yellow](docs/workflow.gif)
+
+*A live review of the bundled demo PDF on Qwen2.5-14B, sped up. The model lane (purple) extracts quotes and drafts comments. The Python lane (teal) checks the quotes, applies the rules, and picks the route. Extraction takes about a minute on an M4 Pro. Every Python step takes a few milliseconds.*
+
 ## The problem
 
 One counsel, a queue of vendor NDAs. Standard paper should clear the same day. Anything that breaks the playbook should land on the desk with the sentence that broke it, not a chatbot paragraph.
