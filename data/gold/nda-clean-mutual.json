@@ -1,0 +1,20 @@
+{
+  "id": "nda-clean-mutual",
+  "title": "Mutual NDA \u2014 Northwind Labs",
+  "counterparty": "Northwind Labs LLC",
+  "summary": "Three-year mutual NDA governed by Delaware law.",
+  "document_type": "nda",
+  "route": "green",
+  "positions": {
+    "mutuality": "accept",
+    "purpose": "accept",
+    "term": "accept",
+    "residuals": "accept",
+    "return_destroy": "accept",
+    "compelled_notice": "accept",
+    "non_solicit": "accept",
+    "governing_law": "accept",
+    "ai_training": "accept",
+    "personal_data": "accept"
+  }
+}

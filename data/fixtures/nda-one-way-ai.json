@@ -1,0 +1,87 @@
+{
+  "document_type": "nda",
+  "counterparty": "Vertex Outsourcing LLC",
+  "positions": [
+    {
+      "id": "mutuality",
+      "present": true,
+      "excerpt": "Acme shall keep Counterparty's Confidential Information secret. Counterparty undertakes no confidentiality obligation to Acme.",
+      "fields": {
+        "mutual": false,
+        "favors_us": false
+      }
+    },
+    {
+      "id": "purpose",
+      "present": true,
+      "excerpt": "Each party shall use Confidential Information solely for the Purpose and for no other purpose.",
+      "fields": {
+        "limited_to_purpose": true
+      }
+    },
+    {
+      "id": "term",
+      "present": true,
+      "excerpt": "The confidentiality obligations survive for three (3) years from the date of each disclosure.",
+      "fields": {
+        "years": 3,
+        "perpetual": false,
+        "trade_secret_only": false
+      }
+    },
+    {
+      "id": "residuals",
+      "present": false,
+      "excerpt": null,
+      "fields": {}
+    },
+    {
+      "id": "return_destroy",
+      "present": true,
+      "excerpt": "Upon written request, the receiving party shall promptly return or destroy all Confidential Information and all copies, and shall retain nothing.",
+      "fields": {
+        "has_return_or_destroy": true,
+        "archive_copy": false
+      }
+    },
+    {
+      "id": "compelled_notice",
+      "present": true,
+      "excerpt": "Before any such disclosure, and to the extent legally permitted, the receiving party shall give the disclosing party prompt written notice so that a protective order may be sought.",
+      "fields": {
+        "must_notify": true
+      }
+    },
+    {
+      "id": "non_solicit",
+      "present": false,
+      "excerpt": null,
+      "fields": {}
+    },
+    {
+      "id": "governing_law",
+      "present": true,
+      "excerpt": "This Agreement is governed by the laws of the State of Delaware, without regard to conflict-of-laws rules.",
+      "fields": {
+        "jurisdiction": "Delaware"
+      }
+    },
+    {
+      "id": "ai_training",
+      "present": true,
+      "excerpt": "Counterparty may use Acme's Confidential Information to train and fine-tune machine learning models.",
+      "fields": {
+        "grants_training": true
+      }
+    },
+    {
+      "id": "personal_data",
+      "present": true,
+      "excerpt": "Confidential Information does not include personal data, and neither party may disclose personal data under this Agreement unless a data processing addendum is signed first.",
+      "fields": {
+        "excludes_personal_data": true,
+        "requires_dpa": true
+      }
+    }
+  ]
+}

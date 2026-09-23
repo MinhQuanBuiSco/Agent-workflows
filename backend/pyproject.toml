@@ -1,0 +1,32 @@
+[project]
+name = "playbook-review"
+version = "0.1.0"
+description = "NDA playbook review. The model extracts quotes. Python decides the route."
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.34.0",
+    "python-multipart>=0.0.18",
+    "pdfplumber>=0.11.0",
+    "openai>=1.60.0",
+    "pyyaml>=6.0.2",
+    "pydantic>=2.10.0",
+    "httpx>=0.28.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.0",
+    "ruff>=0.9.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["../tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]

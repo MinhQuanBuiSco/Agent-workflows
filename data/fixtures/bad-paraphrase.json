@@ -1,0 +1,85 @@
+{
+  "document_type": "nda",
+  "counterparty": "Northwind Labs LLC",
+  "positions": [
+    {
+      "id": "mutuality",
+      "present": true,
+      "excerpt": "The parties agree to keep things confidential and follow industry norms.",
+      "fields": {
+        "mutual": true,
+        "favors_us": false
+      }
+    },
+    {
+      "id": "purpose",
+      "present": true,
+      "excerpt": "The parties agree to keep things confidential and follow industry norms.",
+      "fields": {
+        "limited_to_purpose": true
+      }
+    },
+    {
+      "id": "term",
+      "present": true,
+      "excerpt": "The parties agree to keep things confidential and follow industry norms.",
+      "fields": {
+        "years": 3,
+        "perpetual": false,
+        "trade_secret_only": false
+      }
+    },
+    {
+      "id": "residuals",
+      "present": false,
+      "excerpt": null,
+      "fields": {}
+    },
+    {
+      "id": "return_destroy",
+      "present": true,
+      "excerpt": "The parties agree to keep things confidential and follow industry norms.",
+      "fields": {
+        "has_return_or_destroy": true,
+        "archive_copy": false
+      }
+    },
+    {
+      "id": "compelled_notice",
+      "present": true,
+      "excerpt": "The parties agree to keep things confidential and follow industry norms.",
+      "fields": {
+        "must_notify": true
+      }
+    },
+    {
+      "id": "non_solicit",
+      "present": false,
+      "excerpt": null,
+      "fields": {}
+    },
+    {
+      "id": "governing_law",
+      "present": true,
+      "excerpt": "The parties agree to keep things confidential and follow industry norms.",
+      "fields": {
+        "jurisdiction": "Delaware"
+      }
+    },
+    {
+      "id": "ai_training",
+      "present": false,
+      "excerpt": null,
+      "fields": {}
+    },
+    {
+      "id": "personal_data",
+      "present": true,
+      "excerpt": "The parties agree to keep things confidential and follow industry norms.",
+      "fields": {
+        "excludes_personal_data": true,
+        "requires_dpa": true
+      }
+    }
+  ]
+}

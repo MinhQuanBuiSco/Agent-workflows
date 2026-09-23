@@ -1,0 +1,11 @@
+ORDER FORM
+
+Brightline Software, Inc. ("Vendor") and Acme Industries, Inc. ("Customer") agree to this Order Form dated March 3, 2026.
+
+Customer orders 25 seats of Brightline Analytics at 40 dollars per seat per month. The subscription term is 12 months starting April 1, 2026. Fees are invoiced annually in advance. Support is included on business days.
+
+This Order Form incorporates the Vendor's posted master subscription terms. It is a purchase document for software seats.
+
+This document is not a non-disclosure agreement. It sets no confidentiality survival period, no mutual secrecy duty, and no license to train models on customer information.
+
+Billing contact: ap@acme.example. The order total for the year is 12,000 dollars, payable within 30 days of invoice.

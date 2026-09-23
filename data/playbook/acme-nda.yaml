@@ -1,0 +1,173 @@
+id: acme-vendor-nda
+name: Acme Vendor NDA Playbook
+company: Acme Industries
+positions:
+  - id: mutuality
+    title: Mutual obligations
+    critical: true
+    if_absent: reject
+    rule: mutuality
+    requirement: >
+      Confidentiality must bind both parties. A one-way NDA that binds only
+      Acme is a reject. A one-way NDA that binds only the counterparty is a
+      fallback, not a silent accept.
+    fallback_comment: >
+      Please revise this to a mutual NDA so the confidentiality obligations apply to both parties.
+    fields:
+      - name: mutual
+        type: bool
+        description: True only when the confidentiality obligations bind both parties.
+      - name: favors_us
+        type: bool
+        description: >
+          True only when the NDA is one-way and the counterparty is the only
+          party bound. False when Acme is the only party bound, or when the NDA is mutual.
+
+  - id: purpose
+    title: Purpose limitation
+    critical: true
+    if_absent: reject
+    rule: purpose
+    requirement: Use of confidential information must be limited to the purpose named in the NDA.
+    fallback_comment: >
+      Please limit use of Confidential Information to the Purpose stated in this Agreement.
+    fields:
+      - name: limited_to_purpose
+        type: bool
+        description: True when the contract limits use to the stated purpose.
+
+  - id: term
+    title: Confidentiality term
+    critical: true
+    if_absent: reject
+    rule: term
+    requirement: >
+      Accept a survival period of two or three years. Four or five years is a
+      fallback, including when it covers all information rather than trade
+      secrets only. Reject a perpetual term, or any term longer than five years.
+      A term shorter than two years is a fallback, not an accept.
+    fallback_comment: >
+      Please revise the survival period to three years from disclosure.
+    fields:
+      - name: years
+        type: number
+        description: Length of the confidentiality survival period in years. Null when the term is perpetual or unstated.
+      - name: perpetual
+        type: bool
+        description: True when confidentiality does not expire.
+      - name: trade_secret_only
+        type: bool
+        description: True when the longer survival applies only to trade secrets.
+
+  - id: residuals
+    title: Residual information
+    critical: true
+    if_absent: accept
+    rule: residuals
+    requirement: >
+      Absence of a residual clause is an accept. A right to use information
+      retained in unaided memory is a reject.
+    fallback_comment: >
+      Please delete the residual-information clause. Unaided memory is not a license to use Confidential Information.
+    fields:
+      - name: has_residual
+        type: bool
+        description: True when the contract grants a residual or unaided-memory right.
+
+  - id: return_destroy
+    title: Return or destruction
+    critical: false
+    if_absent: reject
+    rule: return_destroy
+    requirement: >
+      The recipient must return or destroy confidential information on request.
+      A right to keep one archival copy is a fallback. No return obligation is a reject.
+    fallback_comment: >
+      Please require return or destruction of all copies, and delete any right to keep an archival copy.
+    fields:
+      - name: has_return_or_destroy
+        type: bool
+        description: True when the contract requires return or destruction.
+      - name: archive_copy
+        type: bool
+        description: True when the recipient may keep an archival or compliance copy.
+
+  - id: compelled_notice
+    title: Notice of compelled disclosure
+    critical: false
+    if_absent: fallback
+    rule: compelled_notice
+    requirement: >
+      The recipient should give notice before a legally compelled disclosure,
+      where the law allows it. Silence on this point is a fallback.
+    fallback_comment: >
+      Please add a duty to give prompt notice before any legally compelled disclosure, to the extent the law allows.
+    fields:
+      - name: must_notify
+        type: bool
+        description: True when prior notice of compelled disclosure is required if legally permitted.
+
+  - id: non_solicit
+    title: Employee non-solicit
+    critical: false
+    if_absent: accept
+    rule: non_solicit
+    requirement: >
+      An NDA should not carry an employee non-solicit. Absence is an accept.
+      A narrow clause limited to the term is a fallback. A broad one is a reject.
+    fallback_comment: >
+      Please delete the employee non-solicit. It does not belong in this NDA.
+    fields:
+      - name: scope
+        type: string
+        description: >
+          narrow when solicitation is limited to the term of the agreement.
+          broad otherwise. Use narrow or broad only.
+
+  - id: governing_law
+    title: Governing law
+    critical: false
+    if_absent: fallback
+    rule: governing_law
+    requirement: >
+      Accept Delaware, California, or New York. Any other US state is a fallback.
+      A non-US governing law is a reject. Silence is a fallback.
+    fallback_comment: >
+      Please change the governing law to the State of Delaware.
+    fields:
+      - name: jurisdiction
+        type: string
+        description: The state or country named as the governing law, for example Delaware or England.
+
+  - id: ai_training
+    title: Model training
+    critical: true
+    if_absent: accept
+    rule: ai_training
+    requirement: >
+      Silence is an accept, because no training right is granted. An explicit
+      right to train or fine-tune models on confidential information is a reject.
+    fallback_comment: >
+      Please delete any right to use Confidential Information to train or fine-tune machine learning models.
+    fields:
+      - name: grants_training
+        type: bool
+        description: True when the contract grants a right to train or fine-tune models on confidential information.
+
+  - id: personal_data
+    title: Personal data
+    critical: true
+    if_absent: reject
+    rule: personal_data
+    requirement: >
+      The NDA must say that personal data is excluded, or that a data processing
+      addendum is required before any personal data is shared. Silence is a reject.
+    fallback_comment: >
+      Please state that personal data is not Confidential Information, and that none will be shared unless a data processing addendum is signed first.
+    fields:
+      - name: excludes_personal_data
+        type: bool
+        description: True when personal data is carved out of confidential information.
+      - name: requires_dpa
+        type: bool
+        description: True when a data processing addendum is required before personal data is shared.

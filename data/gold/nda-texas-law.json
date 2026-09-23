@@ -1,0 +1,20 @@
+{
+  "id": "nda-texas-law",
+  "title": "Mutual NDA \u2014 Lumen Freight",
+  "counterparty": "Lumen Freight Co.",
+  "summary": "Mutual three-year NDA governed by Texas law.",
+  "document_type": "nda",
+  "route": "yellow",
+  "positions": {
+    "mutuality": "accept",
+    "purpose": "accept",
+    "term": "accept",
+    "residuals": "accept",
+    "return_destroy": "accept",
+    "compelled_notice": "accept",
+    "non_solicit": "accept",
+    "governing_law": "fallback",
+    "ai_training": "accept",
+    "personal_data": "accept"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "nda-five-year-term",
+  "title": "Mutual NDA \u2014 Pike Components",
+  "counterparty": "Pike Components Ltd.",
+  "summary": "Mutual NDA whose confidentiality survives for five years, covering all information.",
+  "document_type": "nda",
+  "route": "yellow",
+  "positions": {
+    "mutuality": "accept",
+    "purpose": "accept",
+    "term": "fallback",
+    "residuals": "accept",
+    "return_destroy": "accept",
+    "compelled_notice": "accept",
+    "non_solicit": "accept",
+    "governing_law": "accept",
+    "ai_training": "accept",
+    "personal_data": "accept"
+  }
+}

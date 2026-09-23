@@ -1,0 +1,20 @@
+{
+  "id": "nda-one-way-ai",
+  "title": "One-way NDA \u2014 Vertex Outsourcing",
+  "counterparty": "Vertex Outsourcing LLC",
+  "summary": "One-way NDA that also grants a right to train models on Acme's information.",
+  "document_type": "nda",
+  "route": "red",
+  "positions": {
+    "mutuality": "reject",
+    "purpose": "accept",
+    "term": "accept",
+    "residuals": "accept",
+    "return_destroy": "accept",
+    "compelled_notice": "accept",
+    "non_solicit": "accept",
+    "governing_law": "accept",
+    "ai_training": "reject",
+    "personal_data": "accept"
+  }
+}

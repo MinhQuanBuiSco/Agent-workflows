@@ -1,0 +1,20 @@
+{
+  "id": "nda-residuals",
+  "title": "Mutual NDA \u2014 Oakline Systems",
+  "counterparty": "Oakline Systems Inc.",
+  "summary": "Mutual NDA that adds a residual-information clause.",
+  "document_type": "nda",
+  "route": "red",
+  "positions": {
+    "mutuality": "accept",
+    "purpose": "accept",
+    "term": "accept",
+    "residuals": "reject",
+    "return_destroy": "accept",
+    "compelled_notice": "accept",
+    "non_solicit": "accept",
+    "governing_law": "accept",
+    "ai_training": "accept",
+    "personal_data": "accept"
+  }
+}

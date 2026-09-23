@@ -1,0 +1,33 @@
+MUTUAL NON-DISCLOSURE AGREEMENT
+
+This Agreement is entered into as of March 3, 2026, by and between Acme Industries, Inc., a Delaware corporation ("Acme"), and Lumen Freight Co., a Texas corporation ("Counterparty").
+
+The parties wish to evaluate a potential vendor relationship for a logistics pilot (the "Purpose").
+
+1. Purpose
+
+Each party shall use Confidential Information solely for the Purpose and for no other purpose.
+
+2. Confidentiality
+
+Obligations under this Agreement are mutual and apply equally to both parties.
+
+3. Term
+
+The confidentiality obligations survive for three (3) years from the date of each disclosure.
+
+4. Return or destruction
+
+Upon written request, the receiving party shall promptly return or destroy all Confidential Information and all copies, and shall retain nothing.
+
+5. Compelled disclosure
+
+If a party is compelled by law, regulation, or legal process to disclose Confidential Information, it shall disclose only what is legally required. Before any such disclosure, and to the extent legally permitted, the receiving party shall give the disclosing party prompt written notice so that a protective order may be sought.
+
+6. Governing law
+
+This Agreement is governed by the laws of the State of Texas, without regard to conflict-of-laws rules.
+
+7. Personal data
+
+Confidential Information does not include personal data, and neither party may disclose personal data under this Agreement unless a data processing addendum is signed first.
